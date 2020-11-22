@@ -1,2 +1,3 @@
 #pragma once
-void bubbleSort(int a[], int size);
+void bubbleSort(int arr[], int len);
+void selectSort(int arr[], int len);

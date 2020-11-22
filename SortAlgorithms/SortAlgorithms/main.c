@@ -3,7 +3,7 @@
 #include"sort.h"	//for sort algorithms
 
 //print the array
-void printArr(int arr[], int size);
+void printArr(int arr[], int len);
 
 int main(void)
 {
@@ -15,20 +15,21 @@ int main(void)
 					-111,-222,-333,-444,-555,-999,-888,-777,-666,
 					111,222,333,444,555,999,888,777,666 
 				};
-	int size = sizeof(arr) / sizeof(arr[0]);
+	int len = sizeof(arr) / sizeof(arr[0]);
 
-	bubbleSort(arr, size);
-	printArr(arr, size);
+	//bubbleSort(arr, len);
+	selectSort(arr, len);
+	printArr(arr, len);
 
 	system("PAUSE");
 	return 0;
 }
 
 
-void printArr(int arr[], int size)
+void printArr(int arr[], int len)
 {
 	int i;
-	for (i = 0; i < size; i++)
+	for (i = 0; i < len; i++)
 		printf("%d ", arr[i]);
 	printf("\n\n");
 }
